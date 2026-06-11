@@ -333,7 +333,12 @@ body {
 .parking-lot-callout .plc-lots {
   font-family: 'Press Start 2P', monospace; font-size: 20px; color: #ff5fa2; margin-bottom: 10px;
 }
-.parking-lot-callout .plc-addr { font-family: Arial; font-size: 14px; color: #ccc; }
+.parking-lot-callout .plc-addr { font-family: Arial; font-size: 14px; color: #ccc; line-height: 1.5; }
+.parking-lot-callout .plc-addr b { color: #fff; }
+.parking-lot-callout.free { border-color: #00ff66; background: rgba(0,255,102,0.06); }
+.parking-lot-callout.free .plc-kicker { color: #00ff66; }
+.parking-lot-callout.free .plc-lots { color: #00ff66; }
+.parking-lot-callout.free .plc-addr b { color: #aaffcc; }
 .parking-btn {
   display: block; text-align: center; margin: 14px auto 2px; padding: 14px 18px;
   background: #ff0080; color: #fff; text-decoration: none;
@@ -803,7 +808,18 @@ body {
         </div>
 
         <div class="parking-route" style="text-align:center;">
-          <span class="dir" style="font-size:15px;">Worried about finding street parking? Here is the easy backup:</span>
+          <span class="dir" style="font-size:15px;">Worried about finding street parking? You have two easy backups:</span>
+        </div>
+
+        <div class="parking-lot-callout free">
+          <div class="plc-kicker">🆓 FREE · NO TIME LIMIT</div>
+          <div class="plc-name">Free Lots Under I-95</div>
+          <div class="plc-lots">Richmond St</div>
+          <div class="plc-addr">There are free parking lots under I-95 along Richmond St, starting at <b>2500 Richmond St</b> all the way up to <b>2857 Richmond St</b>. Leave your car as long as you need, then it is a quick Uber back and forth to the party.</div>
+        </div>
+
+        <div class="parking-route" style="text-align:center; margin-top:18px;">
+          <span class="dir" style="font-size:14px; color:#ffff00;">Or reserve a guaranteed spot:</span>
         </div>
 
         <div class="parking-lot-callout">
