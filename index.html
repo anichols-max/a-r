@@ -298,6 +298,28 @@ body {
   background: rgba(0,255,255,0.05); border: 1px solid rgba(0,255,255,0.15);
   font-family: Arial; font-size: 15px; color: #bbb;
 }
+.parking-map { margin: 14px 0 6px; }
+.parking-map img {
+  width: 100%; height: auto; display: block;
+  border: 1px solid rgba(255,255,255,0.18); border-radius: 6px;
+}
+.parking-map .cap {
+  font-family: Arial; font-size: 13px; color: #999; line-height: 1.5; margin-top: 8px;
+}
+.parking-route {
+  margin-top: 12px; padding: 12px;
+  border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.04);
+  font-family: Arial; font-size: 14px; color: #bbb; line-height: 1.55;
+}
+.parking-route .dir { display:block; font-weight: bold; color: #ffff00; margin-bottom: 2px; }
+.parking-route b { color: #fff; }
+.parking-search {
+  margin-top: 12px; padding: 12px;
+  background: rgba(0,255,255,0.05); border: 1px solid rgba(0,255,255,0.15);
+  font-family: Arial; font-size: 14px; color: #bbb; line-height: 1.55;
+}
+.parking-search b { display:block; margin-top: 6px; color: #00ffff; font-size: 14px; }
+.parking-search span { display:block; margin-top: 6px; font-size: 13px; color: #999; }
 
 /* ═══ FOOTER ═══ */
 .site-footer { text-align: center; padding: 24px 10px; font-family: Arial; font-size: 11px; color: #888; }
@@ -754,9 +776,25 @@ body {
     </div>
     <div class="retro-body">
       <div class="section-relative">
-        <div class="section-title" style="color:#ffff00;">🚐 Shuttle</div>
+        <div class="section-title" style="color:#ffff00;">🅿️ Parking &amp; Getting There</div>
         <div class="shuttle-info">
-          🚐 <strong>Shuttle Service:</strong> A shuttle will run from the parking lot to the venue. Schedule and pickup location TBD — check back closer to the date!
+          🅿️ Street parking around the Lithuanian Music Hall is usually pretty manageable on a summer Saturday afternoon, so most folks should be able to find a spot near the block around 4 or 5 PM. If you live close by in the city, we honestly recommend just grabbing an <strong>Uber or Lyft</strong> over so you never have to think about parking at all.
+        </div>
+
+        <div class="parking-route">
+          🅿️ <span class="dir">Worried about finding street parking?</span>
+          You can park at <b>Rivers Casino</b> (paid self-parking, Lots A &amp; F, 1001 N Delaware Ave) and take a short ride the rest of the way to the venue. Here is where the lots are:
+        </div>
+
+        <div class="parking-map">
+          <img src="rivers-lot-diagram.jpg" alt="Diagram of the Rivers Casino parking lots A and F with the driving route in">
+          <div class="cap"><b>Lots A &amp; F</b> are outlined in green, park in either. The <b>red line</b> shows the driving route in off Delaware Ave. The big building on the river is the casino. From there it is a quick ride over to the party.</div>
+        </div>
+
+        <div class="parking-search">
+          🗺️ In Google or Apple Maps, search this exactly:<br>
+          <b>Rivers Casino Philadelphia - LAZ Parking, 1001 N Delaware Ave, Philadelphia, PA 19125</b>
+          <span>That drops you right between Lot A and Lot F, either one is fine.</span>
         </div>
       </div>
     </div>
