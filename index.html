@@ -320,6 +320,27 @@ body {
 }
 .parking-search b { display:block; margin-top: 6px; color: #00ffff; font-size: 14px; }
 .parking-search span { display:block; margin-top: 6px; font-size: 13px; color: #999; }
+.parking-lot-callout {
+  margin: 14px 0 4px; padding: 18px 16px; text-align: center;
+  border: 2px solid #ffff00; background: rgba(255,255,0,0.06);
+}
+.parking-lot-callout .plc-kicker {
+  font-family: 'Press Start 2P', monospace; font-size: 11px; color: #ffff00; letter-spacing: 1px;
+}
+.parking-lot-callout .plc-name {
+  font-family: 'Press Start 2P', monospace; font-size: 16px; color: #fff; line-height: 1.4; margin: 12px 0 8px;
+}
+.parking-lot-callout .plc-lots {
+  font-family: 'Press Start 2P', monospace; font-size: 20px; color: #ff5fa2; margin-bottom: 10px;
+}
+.parking-lot-callout .plc-addr { font-family: Arial; font-size: 14px; color: #ccc; }
+.parking-btn {
+  display: block; text-align: center; margin: 14px auto 2px; padding: 14px 18px;
+  background: #ff0080; color: #fff; text-decoration: none;
+  font-family: 'Press Start 2P', monospace; font-size: 12px; line-height: 1.5;
+  border: 2px solid #fff;
+}
+.parking-btn:hover { background: #ff2e9a; }
 
 /* ═══ FOOTER ═══ */
 .site-footer { text-align: center; padding: 24px 10px; font-family: Arial; font-size: 11px; color: #888; }
@@ -781,20 +802,32 @@ body {
           🅿️ Street parking around the Lithuanian Music Hall is usually pretty manageable on a summer Saturday afternoon, so most folks should be able to find a spot near the block around 4 or 5 PM. If you live close by in the city, we honestly recommend just grabbing an <strong>Uber or Lyft</strong> over so you never have to think about parking at all.
         </div>
 
-        <div class="parking-route">
-          🅿️ <span class="dir">Worried about finding street parking?</span>
-          You can park at <b>Rivers Casino</b> (paid self-parking, Lots A &amp; F, 1001 N Delaware Ave) and take a short ride the rest of the way to the venue. Here is where the lots are:
+        <div class="parking-route" style="text-align:center;">
+          <span class="dir" style="font-size:15px;">Worried about finding street parking? Here is the easy backup:</span>
+        </div>
+
+        <div class="parking-lot-callout">
+          <div class="plc-kicker">🅿️ PARK HERE</div>
+          <div class="plc-name">LAZ Parking at Rivers Casino</div>
+          <div class="plc-lots">Lots A &amp; F</div>
+          <div class="plc-addr">1001 N Delaware Ave, Philadelphia, PA 19125</div>
         </div>
 
         <div class="parking-map">
-          <img src="rivers-lot-diagram.jpg" alt="Diagram of the Rivers Casino parking lots A and F with the driving route in">
+          <img src="rivers-lot-diagram.jpg" alt="Diagram of the LAZ Parking lots A and F at Rivers Casino with the driving route in">
           <div class="cap"><b>Lots A &amp; F</b> are outlined in green, park in either. The <b>red line</b> shows the driving route in off Delaware Ave. The big building on the river is the casino. From there it is a quick ride over to the party.</div>
         </div>
 
+        <div class="parking-route" style="border-color:rgba(255,0,128,0.4); background:rgba(255,0,128,0.07);">
+          🎟️ <span class="dir" style="color:#ff5fa2;">Reserve your spot ahead of time</span>
+          These lots scan a pass at the gate, so the safest bet is to book in advance through ParkWhiz (about $15 for the afternoon). Pick your time, and your QR pass scans you in and out.
+          <a class="parking-btn" href="https://www.parkwhiz.com/p/philadelphia-parking/1001-n-delaware-ave/?venue_id=15916" target="_blank" rel="noopener">🅿️ Reserve Lots A &amp; F on ParkWhiz →</a>
+        </div>
+
         <div class="parking-search">
-          🗺️ In Google or Apple Maps, search this exactly:<br>
+          🗺️ Just want directions? In Google or Apple Maps, search this exactly:<br>
           <b>Rivers Casino Philadelphia - LAZ Parking, 1001 N Delaware Ave, Philadelphia, PA 19125</b>
-          <span>That drops you right between Lot A and Lot F, either one is fine.</span>
+          <span>That drops you right between Lot A and Lot F.</span>
         </div>
       </div>
     </div>
